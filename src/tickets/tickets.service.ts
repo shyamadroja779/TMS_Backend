@@ -14,7 +14,7 @@ export class TicketsService {
         [TicketStatus.OPEN]: [TicketStatus.IN_PROGRESS],
         [TicketStatus.IN_PROGRESS]: [TicketStatus.RESOLVED],
         [TicketStatus.RESOLVED]: [TicketStatus.CLOSED],
-        [TicketStatus.CLOSED]: [], // No further transitions
+        [TicketStatus.CLOSED]: [],
     };
 
     constructor(
